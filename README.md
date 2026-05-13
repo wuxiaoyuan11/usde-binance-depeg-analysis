@@ -4,6 +4,12 @@ This project studies the Oct 10-11, 2025 USDe Binance depeg event from an on-cha
 
 **Dashboard:** https://dune.com/jessicahuan/usde-binance-depeg-on-chain-price-stability-and-liquidity-response
 
+## Related Links
+
+- Dune dashboard: https://dune.com/jessicahuan/usde-binance-depeg-on-chain-price-stability-and-liquidity-response
+- Research memo: [reports/research_memo.md](reports/research_memo.md)
+- Dune SQL queries: [dune_queries.md](dune_queries.md)
+
 ## Key Takeaway
 
 The Binance USDe depeg appears more consistent with venue-specific liquidity and pricing dislocation than a broad on-chain stablecoin run. Ethereum DEX prices stayed close to peg, trading activity spiked, and large-wallet flows were concentrated but two-sided.
@@ -68,22 +74,13 @@ This framing is relevant for exchanges, market makers, DeFi protocols, and digit
 
 ```text
 usde-depeg-analysis/
-  data/
-    raw/              # Raw API exports and Dune CSVs
-    processed/        # Cleaned analysis-ready datasets
-  figures/            # Charts for README and memo
+  README.md
+  dune_queries.md
   reports/
-    dashboard_copy.md # Dashboard text blocks and layout guide
-    resume_bullets.md # Resume-ready project bullets
-    research_memo.md  # Written analysis draft
+    research_memo.md
   scripts/
     fetch_coingecko.py
     analyze_event.py
-  dune_queries.md     # Dune SQL query plan and query links
+  data/
+    processed/
 ```
-
-## Resume Bullets
-
-- Built an on-chain event study of the USDe Binance depeg using Dune SQL and Python, analyzing DEX price stability, trading volume spikes, net sell pressure, and large-wallet flows across the Oct 10-11, 2025 event window.
-- Found that USDe's minimum median Ethereum DEX price remained near peg at `0.997641`, while daily DEX volume rose to `$571.89m` (`3.0x` trailing 7-day average), suggesting venue-specific dislocation rather than a broad on-chain stablecoin run.
-- Created a public Dune dashboard and research memo translating stablecoin flow data into risk insights relevant to exchanges, market makers, and digital asset research teams.
