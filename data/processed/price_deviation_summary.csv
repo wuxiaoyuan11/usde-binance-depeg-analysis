@@ -1,0 +1,4 @@
+symbol,observations,min_price,max_price,avg_price,max_abs_deviation_from_1
+usdc,360,0.999605,1.000307,0.999792,0.000395
+usde,360,0.996657,1.005508,1.000085,0.005508
+usdt,360,1.000037,1.003644,1.000646,0.003644

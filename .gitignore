@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local notebook/runtime artifacts
+.ipynb_checkpoints/
+
+# Optional large raw exports
+data/raw/*.csv
+data/raw/*.json
+
+# Keep directory placeholders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!figures/.gitkeep
